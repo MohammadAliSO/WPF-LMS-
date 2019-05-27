@@ -12,30 +12,28 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WPF_LMS_.FrontEnd.View;
+using WPF_LMS_.FrontEnd.View.View_Manager;
 
-namespace WPF_LMS_
+
+namespace WPF_LMS_.FrontEnd.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UCManager.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UCManager : UserControl
     {
-        public UCSign ucsign = new UCSign();
-        public UCManager ucmanager= new UCManager();
+        UCinfomanager ucinfomanager = new UCinfomanager();
 
-
-        public MainWindow()
+        public UCManager()
         {
             InitializeComponent();
-
-            ucsign.MaxHeight = 350;
-            ucsign.MaxWidth = 250;
-            ucsign.Margin = new Thickness(0, 35, 0, 0);
-            main_stack.Children.Add(ucsign);
-           
         }
 
-      
+        private void info_manager(object sender, RoutedEventArgs e)
+        {
+            ucinfomanager.MaxHeight = 315;
+            ucinfomanager.MaxWidth = 800
+;            manager_stack.Children.Add(ucinfomanager);
+        }
     }
 }

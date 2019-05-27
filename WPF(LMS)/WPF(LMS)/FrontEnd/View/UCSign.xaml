@@ -7,6 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="250">
     <Grid RenderTransformOrigin="0.5,0.5" >
+        
         <Grid.Background>
             <ImageBrush 
                 ImageSource="/WPF(LMS);component/FrontEnd/img/designe.jpg" TileMode="FlipX">
@@ -20,16 +21,13 @@
                 </ImageBrush.RelativeTransform>
             </ImageBrush>
         </Grid.Background>
-        <Label Height="30" Background="#FF858DE3" Margin="0,0,0,320"   />
-        <StackPanel RenderTransformOrigin="0.5,0.5">
-            <StackPanel.Background>
-                <ImageBrush/>
-            </StackPanel.Background>
+        <StackPanel  x:Name="Sign_Stack" RenderTransformOrigin="0.5,0.5">
 
 
 
-            <Label Height="30" Background="#FF858DE3" Content=" Sign In" FontFamily="MV Boli" FontWeight="Bold" Margin="95,0"   />
 
+
+        <Label Height="30"  Background="#FF858DE3"  Content=" Sign In" FontFamily="MV Boli" FontWeight="Bold" HorizontalContentAlignment="Center"/>
 
             <TextBox x:Name="usernametxt" Height="20" Width="100" Margin="75,60,10,20" BorderBrush="{x:Null}">
                 <TextBox.Background>
@@ -55,6 +53,7 @@
 
             <TextBlock Text="Password  :" Height="20" Width="70" Margin="0,-350,120,0"  />
             <TextBlock Text="UserName : " Height="20" Width="70" Margin="0,-500,120,0"/>
+
 
         </StackPanel>
 

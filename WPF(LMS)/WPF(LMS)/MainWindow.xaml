@@ -4,16 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:loginC="clr-namespace:WPF_LMS_.FrontEnd.View"
+        xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:WPF_LMS_"
         mc:Ignorable="d"
-        Title="Education System" Height="450" Width="800">
+        Title="Education System" Height="490" Width="800" WindowStartupLocation="CenterScreen" MaxWidth="800">
     <Grid>
-        <StackPanel>
+        <StackPanel x:Name="main_stack" MinHeight="1">
             <StackPanel.Background>
                 <ImageBrush ImageSource="FrontEnd/img/BK-stack.jpg"></ImageBrush>
             </StackPanel.Background>
-            <loginC:UCSign Height="350" Width="250" Margin="272 ,20,271.333,0"></loginC:UCSign>
         </StackPanel>
+        
+        
+        
+        
 
     </Grid>
 </Window>
