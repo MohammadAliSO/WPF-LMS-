@@ -129,24 +129,30 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="FrontEnd\img\BK-stack.jpg" />
-    <Resource Include="FrontEnd\img\designe.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="FrontEnd\img\Manager_win.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="FrontEnd\img\Bk_ribbon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="FrontEnd\img\IMG_476182.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="FrontEnd\View\View-Stuedent\" />
     <Folder Include="FrontEnd\View\View-Teacher\" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="FrontEnd\img\22_BO_open_book-512.png" />
+    <Resource Include="FrontEnd\img\901616f38b.png" />
+    <Resource Include="FrontEnd\img\BK-stack.jpg" />
+    <Resource Include="FrontEnd\img\Bk_ribbon.jpg" />
+    <Resource Include="FrontEnd\img\designe.jpg" />
+    <Resource Include="FrontEnd\img\education-png-6.png" />
+    <Resource Include="FrontEnd\img\history-edit-512.png" />
+    <Resource Include="FrontEnd\img\IMG_476182.png" />
+    <Resource Include="FrontEnd\img\manager.png" />
+    <Resource Include="FrontEnd\img\Manager_win.png" />
+    <Resource Include="FrontEnd\img\samad-icon6.png" />
+    <Resource Include="FrontEnd\img\teacher-icon.png" />
+    <Resource Include="FrontEnd\img\test-icon-png-14.jpg" />
     <Resource Include="FrontEnd\img\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FrontEnd\img\add-remove-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FrontEnd\img\select-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

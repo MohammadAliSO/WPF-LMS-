@@ -29,11 +29,64 @@ namespace WPF_LMS_.FrontEnd.View
             InitializeComponent();
         }
 
+
+
+        public void delet_prev()
+        {
+            manager_stack.Children.Remove(ucinfomanager);
+        }
+
+        
+
         private void info_manager(object sender, RoutedEventArgs e)
         {
+            delet_prev();
             ucinfomanager.MaxHeight = 315;
             ucinfomanager.MaxWidth = 800
 ;            manager_stack.Children.Add(ucinfomanager);
+        }
+
+        private void info_student(object sender, RoutedEventArgs e)
+        {
+            delet_prev();
+        }
+
+        private void list_major(object sender, RoutedEventArgs e)
+        {
+            delet_prev();
+        }
+
+        ///////////////////////////////////////
+
+        private void see_marks(object sender, RoutedEventArgs e)
+        {
+            delet_prev();
+        }
+
+        private void chamge_marks(object sender, RoutedEventArgs e)
+        {
+            delet_prev();
+        }
+
+        private void list_marks_student(object sender, RoutedEventArgs e)
+        {
+            delet_prev();
+
+        }
+
+        private void units(object sender, RoutedEventArgs e)
+        {
+            delet_prev();
+        }
+
+        private void add_remove(object sender, RoutedEventArgs e)
+        {
+            delet_prev();
+        }
+
+        private void add_user(object sender, RoutedEventArgs e)
+        {
+            delet_prev();
         }
     }
 }
