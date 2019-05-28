@@ -11,6 +11,8 @@
         <StackPanel>
             <Custom:Ribbon HorizontalAlignment="Left" FlowDirection="RightToLeft" VerticalAlignment="Top" Margin="0,0,0,0" Width="800" Background="#FFDFE9F5" >
 
+               
+                
                 <Custom:RibbonTab Header="                اطلاعات                 " FontSize="22">
                   
 
@@ -24,10 +26,8 @@
 
                     </Custom:RibbonGroup>
                 </Custom:RibbonTab>
-
-
-
-
+                
+                
 
 
                 <Custom:RibbonTab Header="                  برنامه  درس ها                    "   >
@@ -61,6 +61,8 @@
                     </Custom:RibbonGroup>
 
                 </Custom:RibbonTab>
+                
+                
 
 
 

@@ -83,6 +83,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FrontEnd\View\View-Teacher\UCTeacher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -102,6 +106,9 @@
     </Compile>
     <Compile Include="FrontEnd\View\View-Stuedent\UCStudent.xaml.cs">
       <DependentUpon>UCStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\View\View-Teacher\UCTeacher.xaml.cs">
+      <DependentUpon>UCTeacher.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -135,9 +142,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FrontEnd\View\View-Teacher\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="FrontEnd\img\22_BO_open_book-512.png" />
     <Resource Include="FrontEnd\img\901616f38b.png" />
