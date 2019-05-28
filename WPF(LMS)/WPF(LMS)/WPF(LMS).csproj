@@ -79,6 +79,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FrontEnd\View\View-Stuedent\UCStudent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -95,6 +99,9 @@
     </Compile>
     <Compile Include="FrontEnd\View\UCSign.xaml.cs">
       <DependentUpon>UCSign.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\View\View-Stuedent\UCStudent.xaml.cs">
+      <DependentUpon>UCStudent.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -129,7 +136,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FrontEnd\View\View-Stuedent\" />
     <Folder Include="FrontEnd\View\View-Teacher\" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +159,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="FrontEnd\img\select-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FrontEnd\img\img_77586.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FrontEnd\img\report-card-5-985964.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FrontEnd\img\organization_line-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

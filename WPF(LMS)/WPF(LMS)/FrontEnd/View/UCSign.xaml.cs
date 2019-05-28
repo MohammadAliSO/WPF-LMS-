@@ -22,7 +22,8 @@ namespace WPF_LMS_.FrontEnd.View
     /// </summary>
     public partial class UCSign : UserControl
     {
-        
+       
+
         public UCSign()
         {
             InitializeComponent();
@@ -30,21 +31,31 @@ namespace WPF_LMS_.FrontEnd.View
 
         private void Sign_Click(object sender, RoutedEventArgs e)
         {
-            if (usernametxt.Text == "ali" && passwordtxt.Password == "1234" && RBManager.IsChecked == true)
+            MainWindow win = (MainWindow)Window.GetWindow(this);
+
+            if (usernametxt.Text == "ali" && passwordtxt.Password == "1234" && RBManager.IsChecked == true ||
+                usernametxt.Text == "ali" && passwordtxt.Password == "1234" && RBuser.IsChecked == true)
             {
                 MessageBox.Show("شما با موفقیت وارد شدید", "Sign in", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                MainWindow win = (MainWindow)Window.GetWindow(this);
-
                 win.main_stack.Children.Remove(win.ucsign);
+                if (usernametxt.Text == "ali" && passwordtxt.Password == "1234" && RBManager.IsChecked == true) {
+                    win.main_stack.Children.Add(win.ucmanager);
+                }
 
-                win.main_stack.Children.Add(win.ucmanager);
+                if (usernametxt.Text == "ali" && passwordtxt.Password == "1234" && RBuser.IsChecked == true)
+                {
+                    win.main_stack.Children.Add(win.ucstudent);
+                }
 
+                if (usernametxt.Text == "ahmad" && passwordtxt.Password == "1234" && RBuser.IsChecked == true)
+                {
+                }
 
             }
             else
             {
-                MessageBox.Show("ERROR !", "Sign in", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("اطلاعات وارد شده معتبر نمی باشد !", "Sign in", MessageBoxButton.OK, MessageBoxImage.Error);
                 usernametxt.Text = "";
                 passwordtxt.Password = "";
 

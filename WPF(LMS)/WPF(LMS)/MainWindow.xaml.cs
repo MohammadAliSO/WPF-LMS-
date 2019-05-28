@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WPF_LMS_.FrontEnd.View;
+using WPF_LMS_.FrontEnd.View.View_Stuedent;
+
 
 namespace WPF_LMS_
 {
@@ -23,6 +25,7 @@ namespace WPF_LMS_
     {
         public UCSign ucsign = new UCSign();
         public UCManager ucmanager= new UCManager();
+        public UCStudent ucstudent = new UCStudent();
 
 
         public MainWindow()
